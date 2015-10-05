@@ -165,6 +165,7 @@ AssetManager.prototype.download = function (success, error, cb) {
                 }
             }
 
+
         } else if (isAudio(path)) {
             try {
 
@@ -211,8 +212,8 @@ AssetManager.prototype.download = function (success, error, cb) {
                 
         
                 audio.src = path;
+            
                 audio.load();
-
             } catch (e) {
                 if (error) {
                     error();

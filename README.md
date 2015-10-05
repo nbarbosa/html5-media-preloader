@@ -3,7 +3,7 @@ A queue-based HTML5 media preloader for games & other media-heavy apps. It works
 
 ## How to use
 	var preloader = new MediaPreloader({
-	            inclusiveItems: [], // optional list of resources in the format "{ href: 'path_to_resource' }""
+	    inclusiveItems: [], // optional list of resources in the format "{ href: 'path_to_resource' }"
 	    href: 'path/to/json/response', // response example: [{href: 'image1.jpg'}, .. {href:'audio1.mp3'}] - this is the list of resources to be loaded
 	    fromRoot: 'path/to/root' // optional root to prepend to every href in response
 	    updateCallback: function (percent) {
