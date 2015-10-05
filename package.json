@@ -1,0 +1,22 @@
+{
+  "name": "media-preloader",
+  "version": "0.0.1",
+  "main": "dist/mpreloader.min.js",
+  "description": "A queue-based media preloader for games & other media-heavy apps.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nbarbosa/html5-media-preloader.git"
+  },
+  "keywords": [],
+  "author": "Natã Barbosa",
+  "license": "Apache 2.0",
+  "readmeFilename": "README.md",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
