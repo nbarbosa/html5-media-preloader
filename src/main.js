@@ -173,11 +173,12 @@ AssetManager.prototype.download = function (success, error, cb) {
             
                 audio.volume = 0;
                 audio.autoplay = true;
-                var onceReady = false;
 
                 function onready() {
-                    if (onceReady === false) {
-                        onceReady = true;
+                    
+                        audio.removeEventListener('canplay', onready);
+                        audio.removeEventListener('canplaythrough', onready);
+                        audio.removeEventListener('loadeddata', onready);
 
                         audio.pause();
 
@@ -190,7 +191,6 @@ AssetManager.prototype.download = function (success, error, cb) {
                         if (cb) {
                             cb();
                         }
-                    }
 
                 }
 
